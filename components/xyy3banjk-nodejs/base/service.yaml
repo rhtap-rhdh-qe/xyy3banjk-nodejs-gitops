@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: xyy3banjk-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: xyy3banjk-nodejs 
+  name: xyy3banjk-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: xyy3banjk-nodejs 
